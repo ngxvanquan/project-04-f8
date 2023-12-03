@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: 
+    --primary-font: "Poppins", sans-serif;
+    --heading-font: "Sora", sans-serif;
+    --heading-color: #000958;
+    --desc-color: #656689;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    scroll-behavior: smooth;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+}
