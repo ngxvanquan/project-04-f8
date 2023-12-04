@@ -27,3 +27,72 @@ button {
     font-size: inherit;
     color: inherit;
 }
+
+/* ========== Common ========== */
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    max-width: calc(100% 48px);
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ========== Header ========== */
+.header {
+    padding-top: 26px;
+}
+
+.header__body {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav {
+    margin-left: auto;
+}
+
+.header__list {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.header-item__link {
+    color: #5e6085;
+    font-family: var(--primary-font);
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1; /* 100% */
+}
+
+.header-item__link--active {
+    color: var(--heading-color);
+    text-shadow: 0 0 currentColor;
+}
+
+.header-item__link:hover {
+    color: var(--heading-color);
+    text-shadow: 0 0 currentColor;
+}
+
+.header__btn {
+    margin-left: 230px;
+    display: inline-block;
+    width: 117px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid currentColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--heading-color);
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
