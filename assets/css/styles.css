@@ -12,11 +12,11 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
     font-size: 1.6rem;
-    scroll-behavior: smooth;
     height: 1000000px;
 }
 
@@ -337,7 +337,7 @@ a {
 /* ========== About ========== */
 .about {
     margin-top: 50px;
-    padding: 53px 0;
+    padding: 53px 0 128px;
 }
 
 .about__content {
@@ -480,4 +480,137 @@ a {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.42; /* 142.857% */
+}
+
+/* ========== Vacation ========== */
+.vacation {
+    padding: 100px 0;
+}
+
+.vacation__row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.vacation__media {
+    width: 39%;
+    position: relative;
+}
+
+.vacation__img {
+    border-radius: 18px;
+    border: 2px solid #fff;
+    background: linear-gradient(180deg, #c6e2fa 0%, #94c2ea 100%);
+    box-shadow: 0px 17px 77px -8px rgba(190, 165, 139, 0.17);
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.vacation__decor {
+    position: absolute;
+}
+
+.vacation__decor:nth-of-type(1) {
+    top: -15px;
+    right: 12px;
+}
+
+.vacation__decor:nth-of-type(2) {
+    top: 11px;
+    right: 61px;
+}
+
+.vacation__decor:nth-of-type(3) {
+    top: 31px;
+    right: -19px;
+}
+
+.vacation__decor:nth-of-type(4) {
+    top: 260px;
+    right: -31px;
+}
+
+.vacation__decor:nth-of-type(5) {
+    right: 17px;
+    bottom: 150px;
+}
+
+.vacation__decor:nth-of-type(6) {
+    right: -42px;
+    bottom: -54px;
+}
+
+.vacation__content {
+    width: 47.6%;
+}
+
+.vacation__desc {
+    width: 91.7%;
+    margin-top: 24px;
+}
+
+.vacation__list {
+    position: relative;
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+    column-gap: 55px;
+}
+
+.vacation__list::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 100%;
+    height: 2px;
+    opacity: 0.07;
+    background: #ff5b2e;
+}
+
+.vacation-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.vacation-item__label {
+    color: #48496a;
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.vacation-item--active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 95px;
+    height: 2px;
+    background: #ff5b2e;
+}
+
+.vacation__desc--small {
+    margin-top: 36px;
+    font-size: 1.6rem;
+    line-height: 1.87;
+    width: 391px;
+}
+
+.vacation__action {
+    margin-top: 32px;
+    display: inline-block;
+    color: #ff5d31;
+    font-family: var(--primary-font);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    padding-bottom: 3px;
+    border-bottom: 2px solid currentColor;
 }
