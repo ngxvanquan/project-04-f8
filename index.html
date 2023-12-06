@@ -111,27 +111,29 @@
                         <ul class="header__list">
                             <li class="header-item">
                                 <a
-                                    href="#!"
+                                    href="#home"
                                     class="header-item__link header-item__link--active"
                                 >
                                     Home
                                 </a>
                             </li>
                             <li class="header-item">
-                                <a href="#!" class="header-item__link">About</a>
+                                <a href="#about" class="header-item__link"
+                                    >About</a
+                                >
                             </li>
                             <li class="header-item">
-                                <a href="#!" class="header-item__link">
+                                <a href="#services" class="header-item__link">
                                     Services & Rates
                                 </a>
                             </li>
                             <li class="header-item">
-                                <a href="#!" class="header-item__link">
+                                <a href="#review" class="header-item__link">
                                     Review
                                 </a>
                             </li>
                             <li class="header-item">
-                                <a href="#!" class="header-item__link">
+                                <a href="#contacts" class="header-item__link">
                                     Contacts us
                                 </a>
                             </li>
@@ -147,7 +149,7 @@
         </header>
         <main class="main">
             <!-- ========== Hero ========== -->
-            <section class="hero">
+            <section id="home" class="hero">
                 <div class="container">
                     <div class="hero__row">
                         <!-- Hero Media -->
@@ -254,7 +256,7 @@
             </section>
 
             <!-- ========== About ========== -->
-            <section class="about">
+            <section id="about" class="about">
                 <div class="container">
                     <div class="about__row">
                         <section class="about__content">
@@ -342,98 +344,110 @@
             <!-- ========== Vacation ========== -->
             <section class="vacation">
                 <div class="container">
-                    <div class="vacation__media">
-                        <img
-                            src="./assets/img/decor/vacation-decor-01.svg"
-                            alt=""
-                            class="vacation__decor"
-                        />
-                        <img
-                            src="./assets/img/decor/vacation-decor-02.svg"
-                            alt=""
-                            class="vacation__decor"
-                        />
-                        <img
-                            src="./assets/img/decor/vacation-decor-03.svg"
-                            alt=""
-                            class="vacation__decor"
-                        />
-                        <img
-                            src="./assets/img/decor/vacation-decor-04.svg"
-                            alt=""
-                            class="vacation__decor"
-                        />
-                        <img
-                            src="./assets/img/decor/vacation-decor-05.svg"
-                            alt=""
-                            class="vacation__decor"
-                        />
-                        <img
-                            src="./assets/img/decor/vacation-decor-06.svg"
-                            alt=""
-                            class="vacation__decor"
-                        />
-
-                        <figure class="vacation__images">
+                    <div class="vacation__row">
+                        <div class="vacation__media">
                             <img
-                                src="./assets/img/vacation-img.png"
-                                alt="Taking A Vacation? So Is Your Pet."
-                                class="vacation__img"
+                                src="./assets/img/decor/vacation-decor-01.svg"
+                                alt=""
+                                class="vacation__decor"
                             />
-                        </figure>
+                            <img
+                                src="./assets/img/decor/vacation-decor-02.svg"
+                                alt=""
+                                class="vacation__decor"
+                            />
+                            <img
+                                src="./assets/img/decor/vacation-decor-03.svg"
+                                alt=""
+                                class="vacation__decor"
+                            />
+                            <img
+                                src="./assets/img/decor/vacation-decor-04.svg"
+                                alt=""
+                                class="vacation__decor"
+                            />
+                            <img
+                                src="./assets/img/decor/vacation-decor-05.svg"
+                                alt=""
+                                class="vacation__decor"
+                            />
+                            <img
+                                src="./assets/img/decor/vacation-decor-06.svg"
+                                alt=""
+                                class="vacation__decor"
+                            />
+
+                            <figure class="vacation__images">
+                                <img
+                                    src="./assets/img/vacation-img.png"
+                                    alt="Taking A Vacation? So Is Your Pet."
+                                    class="vacation__img"
+                                />
+                            </figure>
+                        </div>
+
+                        <section class="vacation__content">
+                            <h2
+                                class="vacation__heading section-heading section-heading--lv2"
+                            >
+                                Taking A Vacation? So Is Your Pet.
+                            </h2>
+                            <p class="vacation__desc section-desc">
+                                We offer long-term and short-term boarding.
+                                Every dog has its own private, spacious room and
+                                daily individual time in our large play yard.
+                            </p>
+
+                            <ul class="vacation__list">
+                                <a href="#!" class="action__link">
+                                    <li
+                                        class="vacation-item vacation-item--active"
+                                    >
+                                        <img
+                                            src="./assets/img/icon/vacation-01.svg"
+                                            alt=""
+                                            class="vacation-item__icon"
+                                        />
+                                        <span class="vacation-item__label"
+                                            >Pet Boarding</span
+                                        >
+                                    </li>
+                                </a>
+                                <a href="#!" class="vacation__link">
+                                    <li class="vacation-item">
+                                        <img
+                                            src="./assets/img/icon/vacation-02.svg"
+                                            alt=""
+                                            class="vacation-item__icon"
+                                        />
+                                        <span class="vacation-item__label"
+                                            >Pet Daycare</span
+                                        >
+                                    </li>
+                                </a>
+                                <a href="#!" class="vacatioin__link">
+                                    <li class="vacation-item">
+                                        <img
+                                            src="./assets/img/icon/vacation-03.svg"
+                                            alt=""
+                                            class="vacation-item__icon"
+                                        />
+                                        <span class="vacation-item__label"
+                                            >Pet Transport</span
+                                        >
+                                    </li>
+                                </a>
+                            </ul>
+
+                            <p
+                                class="vacation__desc section-desc vacation__desc--small"
+                            >
+                                While you're on holiday, here's where your furry
+                                friends will spend their time.
+                            </p>
+                            <a href="#!" class="vacation__action">View more</a>
+                        </section>
                     </div>
-
-                    <section class="vacation__content">
-                        <h2
-                            class="vacation__heading section-heading section-heading--lv2"
-                        >
-                            Taking A Vacation? So Is Your Pet.
-                        </h2>
-                        <p class="vacation__desc section-desc">
-                            We offer long-term and short-term boarding. Every
-                            dog has its own private, spacious room and daily
-                            individual time in our large play yard.
-                        </p>
-
-                        <ul class="vacation__list">
-                            <li class="vacation-item">
-                                <img
-                                    src="./assets/img/icon/vacation-01.svg"
-                                    alt=""
-                                    class="vacation-item__icon"
-                                />
-                                <span class="vacation-item__label"
-                                    >Pet Boarding</span
-                                >
-                            </li>
-                            <li class="vacation-item">
-                                <img
-                                    src="./assets/img/icon/vacation-02.svg"
-                                    alt=""
-                                    class="vacation-item__icon"
-                                />
-                                <span class="vacation-item__label"
-                                    >Pet Daycare</span
-                                >
-                            </li>
-                            <li class="vacation-item">
-                                <img
-                                    src="./assets/img/icon/vacation-03.svg"
-                                    alt=""
-                                    class="vacation-item__icon"
-                                />
-                                <span class="vacation-item__label"
-                                    >Pet Transport</span
-                                >
-                            </li>
-                        </ul>
-
-                        <p class="vacation__desc vacation__desc--small">
-                            While you're on holiday, here's where your furry
-                            friends will spend their time.
-                        </p>
-                        <a href="#!" class="vacation__action">View more</a>
-                    </section>
                 </div>
             </section>
         </main>
