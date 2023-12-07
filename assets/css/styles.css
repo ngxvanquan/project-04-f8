@@ -94,7 +94,7 @@ a {
     position: sticky;
     top: -10px;
     background: #fff;
-    z-index: 1;
+    z-index: 2;
 }
 
 .header__body {
@@ -733,4 +733,113 @@ a {
 
 .services__btn:hover {
     box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+
+/* ========== Staff ========== */
+
+.staff {
+    padding: 130px 0;
+}
+
+.staff__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.staff__sub-title {
+    color: #5e6085;
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.staff__heading {
+    text-align: center;
+}
+
+.staff__list {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 35px;
+}
+
+.staff-item__images {
+    position: relative;
+    border-radius: 130px;
+    margin: 0 16px;
+}
+
+.staff-item__images::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    width: 100%;
+    border-radius: 130px;
+    height: 266px;
+    background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
+}
+
+.staff-item:nth-of-type(2) .staff-item__images::before {
+    background: linear-gradient(180deg, #ff997e 0%, #f3752e 100%);
+}
+
+.staff-item:nth-of-type(3) .staff-item__images::before {
+    background: linear-gradient(180deg, #fabf3e 0%, #ffa14a 100%);
+}
+
+.staff-item:nth-of-type(4) .staff-item__images::before {
+    background: linear-gradient(180deg, #5bd6e2 0%, #00a7cc 100%);
+}
+
+.staff-item__img {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    display: block;
+    border-radius: inherit;
+}
+
+.staff-item__decor {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.staff-item:nth-of-type(odd) .staff-item__decor {
+    bottom: 0;
+}
+
+.staff-item:nth-of-type(even) .staff-item__decor {
+    top: 0;
+}
+
+.staff-item__title {
+    margin-top: 34px;
+    color: #656689;
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1; /* 100% */
+}
+
+.staff-item__heading {
+    margin-top: 14px;
+    color: var(--heading-color);
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+
+.staff__btn {
+    margin: 48px auto 0;
+    width: 193px;
+    height: 56px;
 }
