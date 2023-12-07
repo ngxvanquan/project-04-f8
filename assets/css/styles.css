@@ -17,7 +17,6 @@ html {
 
 body {
     font-size: 1.6rem;
-    height: 1000000px;
 }
 
 input,
@@ -33,7 +32,7 @@ button {
 .container {
     width: 1170px;
     margin: 0 auto;
-    max-width: calc(100% 48px);
+    max-width: calc(100% - 48px);
 }
 
 a {
@@ -654,6 +653,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    min-width: 0;
 }
 
 .services-item {
@@ -779,8 +779,8 @@ a {
     bottom: 0;
     display: inline-block;
     width: 100%;
+    height: 90%;
     border-radius: 130px;
-    height: 266px;
     background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
 }
 
@@ -807,6 +807,7 @@ a {
 .staff-item__decor {
     position: absolute;
     left: 50%;
+    width: calc(100% + 36px);
     transform: translateX(-50%);
 }
 
@@ -815,7 +816,7 @@ a {
 }
 
 .staff-item:nth-of-type(even) .staff-item__decor {
-    top: 0;
+    top: 16px;
 }
 
 .staff-item__title {
