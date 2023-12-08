@@ -811,11 +811,11 @@ a {
     transform: translateX(-50%);
 }
 
-.staff-item:nth-of-type(odd) .staff-item__decor {
+.staff-item:nth-child(odd) .staff-item__decor {
     bottom: 0;
 }
 
-.staff-item:nth-of-type(even) .staff-item__decor {
+.staff-item:nth-child(even) .staff-item__decor {
     top: 16px;
 }
 
