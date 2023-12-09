@@ -838,17 +838,29 @@
                     </p>
 
                     <div class="pricing__switch-wrapper">
-                        <div class="pricing__switch">
-                            <input
-                                class="pricing__input"
-                                type="checkbox"
-                                name=""
-                                id="pricing-switch"
+                        <div class="pricing__switch-inner">
+                            <div class="pricing__switch">
+                                <input
+                                    hidden
+                                    class="pricing__input"
+                                    type="checkbox"
+                                    name=""
+                                    id="pricing-switch"
+                                />
+                                <label
+                                    for="pricing-switch"
+                                    class="pricing__label"
+                                >
+                                    <span class="pricing__value">Monthly</span>
+                                    <span class="pricing__value">Yearly</span>
+                                </label>
+                            </div>
+
+                            <img
+                                class="pricing__sale-off"
+                                src="./assets/img/icon/save-15.svg"
+                                alt=""
                             />
-                            <label for="pricing-switch" class="pricing__label">
-                                <span class="pricing__value">Monthly</span>
-                                <span class="pricing__value">Yearly</span>
-                            </label>
                         </div>
                     </div>
 
