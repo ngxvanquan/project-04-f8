@@ -86,6 +86,7 @@ a {
 .btn:hover {
     background: var(--primary-bg-color);
     color: #fff;
+    cursor: pointer;
 }
 
 /* ========== Header ========== */
@@ -1153,4 +1154,84 @@ a {
 .review-item__dot--active {
     width: 24px;
     background: currentColor;
+}
+
+/* ========== Blog ========== */
+.blog {
+    padding: 77px 0 130px;
+}
+
+.blog__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog__column {
+    width: 350px;
+    margin-right: 73px;
+}
+
+.blog__desc {
+    color: #656689;
+    font-family: var(--primary-font);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.87; /* 187.5% */
+}
+
+.blog__btn {
+    margin-top: 24px;
+    width: 182px;
+    height: 56px;
+}
+
+.blog__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 48px;
+}
+
+.blog-item__thumb {
+    margin-top: 54px;
+    position: relative;
+    border-radius: 24px;
+    background: #90ccff;
+    height: 362px;
+}
+
+.blog-item__date {
+    position: absolute;
+    top: 24px;
+    left: 36px;
+    color: #fff;
+    font-family: var(--heading-font);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.21; /* 121.429% */
+}
+
+.blog-item__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 322px;
+    height: 296px;
+}
+
+.blog-item__heading {
+    margin-top: 28px;
+    color: var(--heading-color);
+    font-family: var(--heading-font);
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.54; /* 154.545% */
+}
+
+.blog-item__desc {
+    margin-top: 16px;
+    color: #656689;
+    font-family: var(--primary-font);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.71; /* 171.429% */
 }
